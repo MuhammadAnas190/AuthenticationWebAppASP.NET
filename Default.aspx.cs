@@ -49,10 +49,6 @@ namespace AuthenticationWebAppASP
                 Session["_uname"] = _name;
             }
         }
-        protected void logout_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
-        }
 
         protected void register_Click(object sender, EventArgs e)
         {

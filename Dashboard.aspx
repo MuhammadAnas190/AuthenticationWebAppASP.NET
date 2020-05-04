@@ -12,37 +12,39 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <!-- Navigation bar -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
     <form runat="server" id="login">
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Navigation bar -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <asp:Button ID="logoutBtn" runat="server" CssClass="btn btn-danger" Text="Logout" OnClick="logoutBtn_Click" />
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
         <section class="container my-5">
             <div class="row justify-content-center align-items-center text-center">
                 <div class="col-12 col-md-6">
@@ -55,15 +57,16 @@
                 </div>
             </div>
         </section>
-    </form>
 
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <p class="text-center">© Copyright <%: DateTime.Now.Year %>. All rights reserved. </p>
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">© Copyright <%: DateTime.Now.Year %>. All rights reserved. </p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </form>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

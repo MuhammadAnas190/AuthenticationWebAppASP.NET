@@ -19,5 +19,11 @@ namespace AuthenticationWebAppASP
                 Response.Redirect("Default.aspx");
             }
         }
+
+        protected void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Default.aspx");
+        }
     }
 }
